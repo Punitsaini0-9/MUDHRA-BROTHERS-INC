@@ -71,30 +71,28 @@ function Contact() {
                 <div className="mt-8 grid gap-5 sm:grid-cols-2">
                   <Field label="Full Name *" name="name" required />
                   <Field label="Company *" name="company" required />
+                  
                   <Field label="Email *" name="email" type="email" required />
-                  <Field label="Phone" name="phone" type="tel" />
-                  <Field label="Origin (City, State/Prov) *" name="origin" required />
-                  <Field label="Destination (City, State/Prov) *" name="destination" required />
-                </div>
-
-                <div className="mt-5 grid gap-5 sm:grid-cols-2">
                   <div>
                     <label className="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">Service Type</label>
                     <select name="service" className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm focus:border-[var(--navy)] focus:outline-none">
                       <option>Full Truckload (FTL)</option>
                       <option>Less-than-Truckload (LTL)</option>
                       <option>Cross-Border USA/Canada</option>
-                      
                       <option>Temperature Controlled</option>
                       <option>Other / Not sure</option>
                     </select>
                   </div>
-                  <Field label="Approx. Weight or Pallets" name="weight" />
-                </div>
 
-                <div className="mt-5">
-                  <label className="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">Additional Details</label>
-                  <textarea name="details" rows={4} className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm focus:border-[var(--navy)] focus:outline-none" placeholder="Commodity, timing, special handling, recurring lane, etc." />
+                  <Field label="Origin (City, State/Prov) *" name="origin" required />
+                  <Field label="Destination (City, State/Prov) *" name="destination" required />
+
+                  <Field label="Approx. Weight or Pallets" name="weight" className="sm:col-span-2" />
+
+                  <div className="sm:col-span-2">
+                    <label className="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">Additional Details</label>
+                    <textarea name="details" rows={4} className="w-full rounded-sm border border-input bg-background px-4 py-3 text-sm focus:border-[var(--navy)] focus:outline-none" placeholder="Commodity, timing, special handling, recurring lane, etc." />
+                  </div>
                 </div>
 
                 <button type="submit" className="mt-8 inline-flex w-full items-center justify-center rounded-sm bg-[var(--navy)] px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-[var(--navy-deep)] sm:w-auto">
@@ -109,9 +107,9 @@ function Contact() {
   );
 }
 
-function Field({ label, name, type = "text", required = false }: { label: string; name: string; type?: string; required?: boolean }) {
+function Field({ label, name, type = "text", required = false, className = "" }: { label: string; name: string; type?: string; required?: boolean; className?: string }) {
   return (
-    <div>
+    <div className={className}>
       <label className="mb-1.5 block text-xs font-semibold uppercase tracking-widest text-muted-foreground">{label}</label>
       <input
         name={name}

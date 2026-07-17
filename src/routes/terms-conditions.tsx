@@ -19,7 +19,7 @@ function TermsConditions() {
         {/* Subtle background glows */}
         <div className="absolute top-0 right-0 -mt-24 -mr-24 w-96 h-96 rounded-full bg-[var(--gold)]/10 blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 -mb-24 -ml-24 w-96 h-96 rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
-        
+
         <div className="mx-auto max-w-7xl px-6 lg:px-10 text-center">
           <div className="inline-flex items-center gap-2.5 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full backdrop-blur-sm">
             <FileText className="h-4 w-4 text-[var(--gold)]" />
@@ -67,7 +67,7 @@ function TermsConditions() {
                 title: "SMS Disclosures & Opt-In Consent",
                 content: (
                   <>
-                    If you consent to receive SMS from Mudhra Brothers Inc, you agree to receive dispatch updates, quote confirmations, shipment notifications, and account-related SMS from us. Reply STOP to opt-out; Reply HELP for support. Message & data rates may apply. Messaging frequency may vary. SMS consent and phone numbers are not shared with any third parties or affiliates.
+                    If you consent to receive SMS from Mudhra Brothers Inc, you agree to receive dispatch updates, quote confirmations, shipment notifications, and account-related SMS from us. Reply STOP to opt-out; Reply HELP for support to 260.289.3007. Message & data rates may apply. Messaging frequency may vary. SMS consent and phone numbers are not shared with any third parties or affiliates or any marketing purposes.
                   </>
                 )
               },
@@ -107,8 +107,8 @@ function TermsConditions() {
                 )
               }
             ].map((section) => (
-              <div 
-                key={section.num} 
+              <div
+                key={section.num}
                 className="group relative bg-white border border-slate-100 hover:border-[var(--gold)]/30 rounded-2xl p-8 md:p-10 shadow-[0_4px_20px_-4px_rgba(11,37,69,0.03)] hover:shadow-[0_20px_40px_-15px_rgba(11,37,69,0.06)] hover:scale-[1.005] transition-all duration-300 flex flex-col md:flex-row gap-6 items-start"
               >
                 <div className="font-display text-4xl font-extrabold text-[var(--gold)]/30 group-hover:text-[var(--gold)] transition-colors duration-300 select-none">
