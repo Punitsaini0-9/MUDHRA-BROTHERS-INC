@@ -67,7 +67,7 @@ function TermsConditions() {
                 title: "SMS Disclosures & Opt-In Consent",
                 content: (
                   <>
-                    If you consent to receive SMS from Mudhra Brothers Inc, you agree to receive dispatch updates, quote confirmations, shipment notifications, and account-related SMS from us. Reply STOP to opt-out; Reply HELP for support to 260.289.3007. Message & data rates may apply. Messaging frequency may vary. SMS consent and phone numbers are not shared with any third parties or affiliates or any marketing purposes.
+                    If you consent to receive SMS from Mudhra Brothers Inc, you agree to receive dispatch updates, quote confirmations, shipment notifications, and account-related SMS from us. Reply STOP to opt-out; Reply HELP for support to 260.289.3007. You may opt in to receive SMS messages from Mudhra Brothers Inc; verbally, during a conversation. Message & data rates may apply. Messaging frequency may vary. SMS consent and phone numbers are not shared with any third parties or affiliates or any marketing purposes.
                   </>
                 )
               },
