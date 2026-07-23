@@ -30,7 +30,7 @@ function TermsConditions() {
       icon: MessageSquare,
       content: (
         <p className="leading-relaxed">
-          By opting in, you may receive SMS messages related to customer care.
+          By opting in, you may receive SMS messages related to verbal conversation.
         </p>
       )
     },
